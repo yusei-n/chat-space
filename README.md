@@ -33,24 +33,23 @@ Things you may want to cover:
 
 ### Association
 - has_many :message
-- has_many :group
+- has_many :group, through: :groups_users
 
 ## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :massage
-- has_mamy :user
+- has_mamy :user, through: :groups_users
 
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text||
+|body|text|null: false|
 |image|string||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
