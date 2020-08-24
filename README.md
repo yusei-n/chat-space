@@ -32,8 +32,9 @@ Things you may want to cover:
 |password|string|null: false|
 
 ### Association
-- has_many :message
+- has_many :messages
 - has_many :group, through: :groups_users
+- has_many :groups_users
 
 ## groupsテーブル
 
@@ -42,14 +43,15 @@ Things you may want to cover:
 |name|string|null: false|
 
 ### Association
-- has_many :massage
-- has_mamy :user, through: :groups_users
+- has_many :massages
+- has_many :user, through: :groups_users
+- has_many :groups_users
 
 ## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text||
 |image|string||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
