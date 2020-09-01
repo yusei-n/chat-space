@@ -8,7 +8,7 @@
   height: 100vh;
   width: 300px;
   background-color: #2f3e51;
-  .side-bar__user-name {
+  &__user-name {
     width: 300px;
     height: 100px;
     background-color: #253141;
@@ -24,9 +24,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .top-items__icons {
+      &__icons {
         .Contents__btn {
-          color: #ffffff;
           margin-left: 5px;
         }
       }
@@ -36,11 +35,11 @@
     height: calc(100vh - 100px);
     .side-items {
       color: #ffffff;
-      .side-items__name {
+      &__name {
         margin: 20px 20px 5px 20px;
         font-size: 15px;
       }
-      .side-items__message {
+      &__message {
         margin: 0 20px 40px 20px;
         font-size: 11px;
       }
@@ -51,7 +50,7 @@
   height: 100vh;
   width: calc(100vw - 100px);
   background-color:#ffffff;
-  .chat-main__group-info {
+  &__group-info {
     height: 100px;
     background-color: #ffffff;
     border-bottom: solid 1px #eeeeee;
@@ -59,7 +58,7 @@
     .group-items {
       display: flex;
       justify-content: space-between;
-      .group-items__left {
+      &__left {
         .group-items__left-name {
           color: #333333;
           font-size: 20px;
@@ -71,7 +70,7 @@
           margin-top: 15px;
         }
       }
-      .group-items__right {
+      &__right {
         width: 72px;
         display: flex;
         justify-content: center;
@@ -86,12 +85,12 @@
       }
     }
   }
-  .chat-main__group-list {
+  &__group-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
     .message-items {
       padding: 35px 0 11px 40px;
-      .message-items__info {
+      &__info {
         display: flex;
         margin-bottom: 12px;
         .message-items__info-name {
@@ -104,7 +103,7 @@
           font-size: 12px;
         }
       }
-      .message-items__message {
+      &__message {
         color: #434A54;
         font-size: 14px;
       }
