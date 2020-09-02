@@ -44,10 +44,15 @@
       &__name {
         margin: 20px 20px 5px 20px;
         font-size: 15px;
+        color: #ffffff;
       }
       &__message {
         margin: 0 20px 40px 20px;
         font-size: 11px;
+        color: #ffffff;
+      }
+      a{
+        text-decoration: none;
       }
     }
   }
