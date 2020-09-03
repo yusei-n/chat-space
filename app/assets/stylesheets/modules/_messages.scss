@@ -25,12 +25,10 @@
       justify-content: space-between;
       align-items: center;
       &__icons {
+        display: flex;
         .contents__btn {
           margin-left: 5px;
-          .far {
-            color: #ffffff;
-          }
-          .fa {
+          a {
             color: #ffffff;
           }
         }
@@ -92,6 +90,10 @@
           font-size: 16px;
           padding: 0 20px;
           border: 1px solid #38aef0;
+          a {
+            color: #38aef0;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -99,6 +101,7 @@
   &__group-list {
     height: calc(100vh - 190px);
     background-color: #fafafa;
+    overflow: scroll;
     .message-items {
       padding: 35px 0 11px 40px;
       &__info {
@@ -115,8 +118,10 @@
         }
       }
       &__message {
-        color: #434A54;
-        font-size: 14px;
+        .Message__content {
+          color: #434A54;
+          font-size: 14px;
+        }
       }
     }
   }

@@ -1,18 +1,19 @@
 .side-bar
   .side-bar__user-name
-    .top-items
+    %h3.top-items
       = current_user.name
-      .top-items__icons
-        .contents__btn
+      %ul.top-items__icons
+        %li.contents__btn
           = link_to new_group_path(current_user) do
             = icon('far', 'edit')
+        %li.contents__btn
           = link_to edit_user_path(current_user) do
             = icon('fa', 'cog')
   .side-bar__group-list
     - current_user.groups.each do |group|
       .side-items
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side-items__name
             = group.name
           .side-items__message
-            メッセージはまだありません
+            = group.show_last_message
